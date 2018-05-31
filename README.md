@@ -2,7 +2,7 @@
 
 <作成中，コード未up>
 
-テキストデータをTF-IDF（Term Frequency Inverse Document Frequency）値の重みを用いてtokenizeし，Ridge回帰を行う機会があったので，実験用コードを纏めておく．
+テキストデータをTF-IDF（Term Frequency Inverse Document Frequency）値の重みを用いてtokenizeし，Ridge回帰を行う実験用コード．
 
 ## モチベーション
 
