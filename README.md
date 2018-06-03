@@ -58,10 +58,11 @@ tf,idfの表現方法は[色々ある](http://yukinoi.hatenablog.com/entry/2016/
 
 classification.ipynb
 
-- Kaggleの[toxicコンペの文書データ](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data)を使用する．
-- 文書のクリーニングは，大文字→小文字に変換のみ行う．
-- nltkでstopwordsフィルタリングを適用する
-- TF-IDFは，scikit learnの`TfidfVectorizer`クラスを使用
+- Kaggleの[toxicコンペの文書データ](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data)を使用する
+- 文書のクリーニングは，大文字→小文字に変換のみ行う
+- nltkでstopwordsを取得する
+- TF-IDFは，scikit learnの`TfidfVectorizer`クラスを使用する
+    - `TfidfVectorizer`の学習パラメータにnltkで取得したstopwords辞書を適用する
 - Ridge回帰は，scikit learnの`RidgeClassifier`クラスを使用
 
 
