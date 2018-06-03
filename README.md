@@ -60,7 +60,6 @@ classification.ipynb
 
 - Kaggleの[toxicコンペの文書データ](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data)を使用する．
 - 文書のクリーニングは，大文字→小文字に変換のみ行う．
-- 文書データは，one-hot
 - TF-IDFは，scikit learnの`TfidfVectorizer`クラスを使用
 - Ridge回帰は，scikit learnの`RidgeClassifier`クラスを使用
 
