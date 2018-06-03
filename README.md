@@ -1,6 +1,6 @@
 # tfidf-ridge
 
-<作成中，コード未up>
+<作成中，コード未debug>
 
 テキストデータをTF-IDF（Term Frequency Inverse Document Frequency）値の重みを用いてtokenizeし，Ridge回帰を行う実験用コード．
 
@@ -42,11 +42,7 @@ TF，IDFがともに大きいとき，
 ### 指標の計算式
 tf,idfの表現方法は[色々ある](http://yukinoi.hatenablog.com/entry/2016/11/12/231422)が，一番オーソドックスな計算式を以下に示す．
 
-```math
-tfidf_{i,j} = tf_{i,j} \cdot idf_i
 
-
-```
 
 ## 線形回帰
 
@@ -60,9 +56,17 @@ tfidf_{i,j} = tf_{i,j} \cdot idf_i
 
 ## 実験用コード
 
-### Requirments
+classification.ipynb
+
+- Kaggleの[toxicコンペの文書データ](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data)を使用する．
+- 文書のクリーニングは，大文字→小文字に変換のみ行う．
+- TF-IDFは，scikit learnの`TfidfVectorizer`クラスを使用
+- Ridge回帰は，scikit learnの`RidgeClassifier`クラスを使用
 
 ### 使い方
 
-
+1. 本リポジトリをgit cloneする．
+2. DLしたリポジトリのディレクトリ内に`train.csv`, `test.csv`, `sample_submission.csv`（文書データ）を置く
+3. `$ pip install -r requirements.txt`を実行する．
+3. `classification.ipynb`を開き，上から順にセルを実行する．
 
