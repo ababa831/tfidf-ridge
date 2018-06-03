@@ -6,7 +6,7 @@
 
 ## モチベーション
 
-テキストデータをone-hot encodingする場合等，スパースなデータを扱うときに線形回帰がよく用いられる．Kaggleでスパースデータを扱うことになりそうなので，この機会にTF-IDFと線形回帰(特にRidge回帰)の基礎を振り返ろうと思った．
+テキストデータをone-hot encodingしたり，TF-IDFでベクトル化したりする場合等，スパースなデータを扱うときに線形回帰がよく用いられる．Kaggleでスパースデータを扱うことになりそうなので，この機会にTF-IDFと線形回帰(特にRidge回帰)の基礎を振り返ろうと思った．
 
 ## TF-IDFとは？
 
@@ -60,8 +60,10 @@ classification.ipynb
 
 - Kaggleの[toxicコンペの文書データ](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data)を使用する．
 - 文書のクリーニングは，大文字→小文字に変換のみ行う．
+- 文書データは，one-hot
 - TF-IDFは，scikit learnの`TfidfVectorizer`クラスを使用
 - Ridge回帰は，scikit learnの`RidgeClassifier`クラスを使用
+
 
 ### 使い方
 
